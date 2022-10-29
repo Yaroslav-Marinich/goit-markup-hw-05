@@ -73,16 +73,11 @@ body {
   padding-bottom: 94px;
 }
 
-/* a:visited {
-  color: var(--primary-text-color);
-} */
 
 /*---------------- head -------------------*/
 .header {
   background-color: var(--white-color);
   border-bottom: 1px solid #ececec;
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 
 .nav {
@@ -92,6 +87,8 @@ body {
 
 .nav > .nav-logo {
   margin-right: 93px;
+  display: block;
+  padding: 24px 0;
 }
 
 .nav-logo,
@@ -133,7 +130,7 @@ body {
   height: 4px;
   background-color: var(--accent-color);
   border-radius: 2px;
-  top: 2.85rem;
+  bottom: -1px;
 }
 
 .nav-link,
@@ -143,6 +140,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   display: block;
+  padding: 32px 0;
   transition: color var(--transition);
 }
 
@@ -419,7 +417,7 @@ body {
 
 .clients-icon {
   fill: #afb1b8;
-  transition: background-color var(--transition), fill var(--transition);
+  transition: fill var(--transition);
 }
 
 .client-link:hover,
@@ -589,11 +587,11 @@ body {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
   background: #f5f4fa;
-  border: 2px solid #f5f4fa;
+  border: none;
   border-radius: 4px;
   padding: 6px 22px;
   transition: color var(--transition), background-color var(--transition),
-    box-shadow var(--transition), border var(--transition), border-radius var(--transition);
+    box-shadow var(--transition);
 }
 
 .filters-btn:hover,
@@ -601,11 +599,8 @@ body {
 .filters-btn:root {
   color: var(--white-color);
   background-color: var(--accent-color);
-  border: 2px solid var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  cursor: pointer;
 }
 
 /* content */
@@ -623,7 +618,7 @@ body {
 .content-link {
   display: block;
   position: relative;
-  transition: box-shadow var(--transition), transform var(--transition);
+  transition: box-shadow var(--transition);
 }
 
 .content-link:hover .content-top-text,
@@ -633,7 +628,7 @@ body {
 
 .content-link:hover,
 .content-link:focus {
-  transform: translateY(-2px);
+  /* transform: translateY(-2px); */
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
